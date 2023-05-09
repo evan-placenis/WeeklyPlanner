@@ -427,13 +427,5 @@ function Table(props){
 
     
 }
-function chechCheckBox(){
-    var goalsMet = 0;
-    var goal_two = document.getElementById("mG1");
-    if(goal_two.checked == true){
-        console.log("IT HAS BEEN CHECKED!");
-        goalsMet++
-    }
-}
 
 export default Table;

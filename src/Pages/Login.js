@@ -1,4 +1,4 @@
-import Table from './Table'
+import Table from '../Table'
 function Login(){
     return(
         <div className = "Login">
