@@ -1,13 +1,46 @@
 import './index.css';
-import Table from './components/Table';
+import AddGoal from './components/Table/AddGoal'
+import Row from './components/Table/Row';
+import Outline from './components/Table/Outline';
+import Navigation from './components/Navigation';
+import Table from './components/Table'
+
 import { useState } from 'react';
+
 function App() {
-  const[name, setName] = useState('dev');
+  const[goals, setGoals] = useState([
+      {
+        goal: "brush teeth"
+      },
+      {
+        goal: "workout"
+      },
+      {
+        goal: "code"
+      },
+      {
+        goal: "sleep"
+      },
+    ])
+
+  function newGoal(goal){
+    const newGoal = {
+      goal: goal
+    }
+    setGoals([...goals, newGoal])
+  }
+  
   return (
     <div className = "App">
-      <h1 class = "font-bold text-center">Weekly Planner</h1>
-    
-      <Table name = {name} goal = "Brush Teeth" />
+      <Navigation/>
+      <Outline/>
+      {goals.map((entry)=>{
+        return(
+            <Row goal={entry.goal}/>
+        );
+      })}
+      <AddGoal newGoal = {newGoal}/>
+
     </div>
   );
 }
