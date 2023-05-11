@@ -10,7 +10,7 @@ function Outline(){
                         <th scope="col" class="px-6 py-4">Goals</th>
                         <th scope="col" class="px-6 py-4">Monday</th>
                         <th scope="col" class="px-6 py-4">Tuesday</th>
-                        <th scope="col" class="px-6 py-4">Wednesday</th>
+                        <th scope="col" class="px-6 py-4 max-w-[100.39px]">Wednesday</th>
                         <th scope="col" class="px-6 py-4">Thurday</th>
                         <th scope="col" class="px-6 py-4">Friday</th>
                         <th scope="col" class="px-6 py-4">Saturday</th>

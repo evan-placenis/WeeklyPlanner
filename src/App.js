@@ -7,18 +7,17 @@ import Farm from './Pages/Farm';
 function App() {
   return (
     
-    <Navigation>
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Navigation>
         <Routes>
 
           <Route path = '/Home' element = {<Home />}/>
           <Route path = '/Farm' element = {<Farm />}/>
           
         </Routes>
-      </BrowserRouter>
-    </Navigation> 
+      </Navigation> 
+    </BrowserRouter>
+    
   );
 }
 
