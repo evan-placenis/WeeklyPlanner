@@ -6,7 +6,6 @@ import Farm from './Pages/Farm';
 
 function App() {
   return (
-    
     <BrowserRouter>
       <Navigation>
         <Routes>
@@ -17,7 +16,6 @@ function App() {
         </Routes>
       </Navigation> 
     </BrowserRouter>
-    
   );
 }
 
