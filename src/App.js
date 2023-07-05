@@ -3,15 +3,17 @@ import Home from './Pages/Home'
 import Navigation from './components/Navigation';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Farm from './Pages/Farm';
+import Login from './Pages/Login';
 
 function App() {
   return (
     <BrowserRouter>
       <Navigation>
         <Routes>
-
+          <Route path = '/' element = {<Login />}/>
           <Route path = '/Home' element = {<Home />}/>
           <Route path = '/Farm' element = {<Farm />}/>
+          
           
         </Routes>
       </Navigation> 

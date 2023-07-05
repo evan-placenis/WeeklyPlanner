@@ -76,7 +76,7 @@ function Home() {
       
       <div class = "space-y-40">
         <AddGoal newGoal = {newGoal}/>
-        <DisplayImage dailyScore = {myScore}/>
+        {/* <DisplayImage dailyScore = {myScore}/> */}
       </div>
     </div>
   );
