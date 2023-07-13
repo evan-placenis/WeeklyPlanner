@@ -1,6 +1,14 @@
 function Farm(){
+    function test() {
+        
+    }
     return(
-        <h1>YOUR FARM</h1>
+        <div>
+            <h1>YOUR FARM</h1>
+            <p>
+                THELK:LSKJDlf
+            </p>
+        </div>
     );
     
 }
